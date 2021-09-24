@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Palanquin:wght@300;500&family=Play:wght@400;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap&effect=shadow-multiple");
+
+/*GLOBALS*/
+@import "./variables";
+@import "./globals";
+
+/*PARTIALS*/
+@import "./partials/header";
+@import "./partials/footer";
+
+/*PAGES*/
+@import "./pages/home";
+@import "./pages/blog";
+@import "./pages/contacto";
+@import "./pages/servicios";
+@import "./pages/galeria";
+@import "./pages/404";

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../multimedia/favicon.ico"
+      sizes="32x32"
+    />
+    <meta
+      name="description"
+      content="Te gusto el trabajo que viste? no dudes en contactarte con nosotros, se que vamos a saber entenderte y reflejar en nuestro trabajo lo que vos queres ver, ese instante que queres capturar y recordarlo siempre"
+    />
+    <meta
+      name="keywords"
+      content="FOTOGRAFIA, PH, PABLO PH, CUMPLEAñOS, CASAMIENTOS, BOOKS, BOOK, CONTACTO"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>Pablo PH - Contacto</title>
+  </head>
+  <body>
+    <header>
+      <!--Comienzo header-->
+      <nav class="navegation">
+        <picture class="navegation__logo">
+          <a href="../index.html">
+            <img src="../multimedia/logo.svg" alt="logo-fotografia" />
+          </a>
+        </picture>
+        <ul class="navegation__menu">
+          <li>
+            <a href="../index.html">HOME</a>
+          </li>
+          <li>
+            <a href="./servicios.html">SERVICIOS</a>
+          </li>
+          <li>
+            <a href="./galeria.html">GALERIA</a>
+          </li>
+          <li>
+            <a href="./blog.html">BLOG</a>
+          </li>
+          <li>
+            <a href="./contacto.html">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Fin header-->
+    <!--Comienzo Main-->
+    <main>
+      <h1 class="font-effect-shadow-multiple">Contacto</h1>
+      <section class="contact">
+        <!--Comienzo Form-->
+        <form class="contact__form" action="#" method="POST">
+          <label class="form-label" for="nombre">Nombre</label>
+          <input
+            class="form-control"
+            type="text"
+            name="nombre"
+            placeholder="Nombre"
+          />
+          <label class="form-label" for="apellido">Apellido</label>
+          <input
+            class="form-control"
+            type="text"
+            name="apellido"
+            placeholder="Apellido"
+          />
+          <label class="form-label" for="email">Email</label>
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            placeholder="email@dominio.com"
+          />
+          <label class="form-label" for="estadoCivil">Estado Civil</label>
+          <select class="form-select" name="estadoCivil" id="">
+            <option value="">Seleccione</option>
+            <option value="casado">Casado</option>
+            <option value="soltero">Soltero</option>
+            <option value="divorciado">Divorciado</option>
+            <option value="viudo">Viudo</option>
+          </select>
+          <label class="form-check-label"
+            >Desea recibir ofertas y promociones?</label
+          >
+          <input class="form-check-input" type="checkbox" name="ofertas" />
+          <textarea
+            class="form-control"
+            name="comentarios"
+            cols="30"
+            rows="10"
+            placeholder="Inserte texto aqui"
+          ></textarea>
+          <input
+            class="btn btn-primary form-button"
+            type="submit"
+            value="Enviar"
+          /><input
+            class="btn btn-primary form-button"
+            type="reset"
+            value="Limpiar"
+          />
+        </form>
+        <!--Fin Form-->
+        <!--Comienzo Aside-->
+        <aside class="contact__aside">
+          <div class="contact__aside__container avoid-line-height">
+            <img
+              class="contact__aside__container__img"
+              src="../multimedia/contacto.jpg"
+              alt="Formulario contacto imagen"
+            />
+          </div>
+        </aside>
+        <!--Fin Aside-->
+      </section>
+    </main>
+    <!--Fin Main-->
+    <!--Comienzo Footer-->
+    <footer class="footer">
+      <div class="footer__logo">
+        <picture>
+          <a href="../index.html">
+            <img src="../multimedia/logo.svg" alt="logo fotografia" />
+          </a>
+        </picture>
+      </div>
+      <div class="footer__social-media">
+        <a href="#"><span class="iconify" data-icon="mdi:facebook"></span></a>
+        |
+        <a href="#"><span class="iconify" data-icon="mdi:instagram"></span></a>
+        |
+        <a href="#"><span class="iconify" data-icon="mdi:linkedin"></span></a>
+      </div>
+      <div class="footer__links">
+        <a href="../index.html">HOME</a> |
+        <a href="./servicios.html">SERVICIOS</a> |
+        <a href="./galeria.html">GALERIA</a> | <a href="./blog.html">BLOG</a> |
+        <a href="./contacto.html">CONTACTO</a>
+      </div>
+    </footer>
+    <!--Fin Footer-->
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+  </body>
+</html>
