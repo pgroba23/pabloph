@@ -69,6 +69,7 @@
       &__img-div#{$i} {
         grid-column: 1;
         grid-row: #{$i};
+        background-attachment: initial;
       }
     }
   }

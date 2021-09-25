@@ -36,16 +36,21 @@
   }
 
   &__links {
-    a {
-      display: inline-block;
-      transform: translateY(0);
-      transition: 0.2s ease;
-      padding: 0.5rem;
-      font-size: 1.3em;
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 0;
+      &__a {
+        display: inline-block;
+        transform: translateY(0);
+        transition: 0.2s ease;
+        padding: 0.5rem;
+        font-size: 1.3em;
 
-      &:hover {
-        transform: translateY(-1rem);
-        color: whitesmoke;
+        &:hover {
+          transform: translateY(-1rem);
+          color: whitesmoke;
+        }
       }
     }
   }

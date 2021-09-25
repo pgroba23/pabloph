@@ -173,15 +173,19 @@ ul {
       font-size: 3em; }
       .footer__social-media a:hover {
         color: whitesmoke; }
-  .footer__links a {
-    display: inline-block;
-    transform: translateY(0);
-    transition: 0.2s ease;
-    padding: 0.5rem;
-    font-size: 1.3em; }
-    .footer__links a:hover {
-      transform: translateY(-1rem);
-      color: whitesmoke; }
+  .footer__links__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0; }
+    .footer__links__list__a {
+      display: inline-block;
+      transform: translateY(0);
+      transition: 0.2s ease;
+      padding: 0.5rem;
+      font-size: 1.3em; }
+      .footer__links__list__a:hover {
+        transform: translateY(-1rem);
+        color: whitesmoke; }
 
 @media only screen and (max-width: 780px) {
   .footer {
@@ -431,6 +435,16 @@ ul {
       .contact__aside__container__img:hover {
         filter: blur(0); }
 
+@media only screen and (max-width: 780px) {
+  .contact__form textarea {
+    padding: 1rem;
+    margin: 1rem;
+    width: 80vw;
+    border: 1px double;
+    font-size: 1em; }
+  .contact__aside {
+    display: none; } }
+
 /*Service*/
 .service {
   padding: 2rem;
@@ -448,12 +462,12 @@ ul {
   .service__text {
     padding: 0 4rem; }
   .service__container {
-    width: 500px;
+    width: 600px;
     transition: width 2s, box-shadow 2s; }
     .service__container__img {
       width: 100%; }
     .service__container:hover {
-      width: 600px;
+      width: 700px;
       box-shadow: 10px 10px 20px gray; }
 
 .zigzag-timeline__item {
@@ -535,28 +549,36 @@ ul {
     grid-template-rows: repeat(8, 40rem); }
     .galery__img-div1 {
       grid-column: 1;
-      grid-row: 1; }
+      grid-row: 1;
+      background-attachment: initial; }
     .galery__img-div2 {
       grid-column: 1;
-      grid-row: 2; }
+      grid-row: 2;
+      background-attachment: initial; }
     .galery__img-div3 {
       grid-column: 1;
-      grid-row: 3; }
+      grid-row: 3;
+      background-attachment: initial; }
     .galery__img-div4 {
       grid-column: 1;
-      grid-row: 4; }
+      grid-row: 4;
+      background-attachment: initial; }
     .galery__img-div5 {
       grid-column: 1;
-      grid-row: 5; }
+      grid-row: 5;
+      background-attachment: initial; }
     .galery__img-div6 {
       grid-column: 1;
-      grid-row: 6; }
+      grid-row: 6;
+      background-attachment: initial; }
     .galery__img-div7 {
       grid-column: 1;
-      grid-row: 7; }
+      grid-row: 7;
+      background-attachment: initial; }
     .galery__img-div8 {
       grid-column: 1;
-      grid-row: 8; } }
+      grid-row: 8;
+      background-attachment: initial; } }
 
 .page-not-found {
   height: 100vh;
