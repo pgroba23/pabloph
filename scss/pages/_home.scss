@@ -159,11 +159,17 @@
   .opinion-container {
     &__card {
       &__content {
+        &__title {
+          font-weight: 700;
+        }
+        &__text {
+          font-weight: 500;
+        }
         &__img {
-          width: 80px;
-          height: 80px;
-          top: -60px;
-          right: 30px;
+          width: 100%;
+          height: auto;
+          top: 50%;
+          overflow: hidden;
           opacity: 0.2;
         }
       }

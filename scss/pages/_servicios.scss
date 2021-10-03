@@ -72,4 +72,16 @@
 }
 
 @media only screen and (max-width: $media-sm) {
+  .service {
+    flex-direction: column;
+    &__container {
+      width: 85vw;
+      transition: width 2s, box-shadow 2s;
+
+      &__img {
+        margin-top: 1rem;
+        width: 100%;
+      }
+    }
+  }
 }

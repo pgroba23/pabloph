@@ -39,6 +39,7 @@
     &__list {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       margin-bottom: 0;
       &__a {
         display: inline-block;

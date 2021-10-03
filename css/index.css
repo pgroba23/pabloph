@@ -176,6 +176,7 @@ ul {
   .footer__links__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 0; }
     .footer__links__list__a {
       display: inline-block;
@@ -302,11 +303,15 @@ ul {
       font-size: 1.5em; } }
 
 @media only screen and (max-width: 400px) {
+  .opinion-container__card__content__title {
+    font-weight: 700; }
+  .opinion-container__card__content__text {
+    font-weight: 500; }
   .opinion-container__card__content__img {
-    width: 80px;
-    height: 80px;
-    top: -60px;
-    right: 30px;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    overflow: hidden;
     opacity: 0.2; } }
 
 /*Blog*/
@@ -425,25 +430,34 @@ ul {
       .contact__form .form-button:hover {
         background-color: rgba(177, 189, 190, 0.5);
         transition: background-color 0.3s ease; }
-  .contact__aside__container {
-    width: 500px;
-    margin-bottom: 3.5rem; }
-    .contact__aside__container__img {
-      width: 100%;
-      filter: blur(0.5rem);
-      transition: filter 0.3s ease; }
-      .contact__aside__container__img:hover {
-        filter: blur(0); }
-
-@media only screen and (max-width: 780px) {
-  .contact__form textarea {
-    padding: 1rem;
-    margin: 1rem;
-    width: 80vw;
-    border: 1px double;
-    font-size: 1em; }
   .contact__aside {
-    display: none; } }
+    margin: 0 2rem; }
+    .contact__aside__container {
+      width: 500px;
+      margin-bottom: 3.5rem; }
+      .contact__aside__container__img {
+        width: 100%;
+        filter: blur(0.5rem);
+        transition: filter 0.3s ease; }
+        .contact__aside__container__img:hover {
+          filter: blur(0); }
+
+@media only screen and (max-width: 1160px) {
+  .contact {
+    flex-direction: column; }
+    .contact__form {
+      margin: 0;
+      padding-right: 1rem; }
+      .contact__form textarea {
+        padding: 1rem;
+        margin: 1rem;
+        width: 90vw;
+        border: 1px double;
+        font-size: 1em; }
+      .contact__form .checkbox {
+        margin: 1rem 0; }
+    .contact__aside {
+      display: none; } }
 
 /*Service*/
 .service {
@@ -493,6 +507,16 @@ ul {
   height: 2rem;
   width: 2rem;
   background: #39414a; }
+
+@media only screen and (max-width: 780px) {
+  .service {
+    flex-direction: column; }
+    .service__container {
+      width: 85vw;
+      transition: width 2s, box-shadow 2s; }
+      .service__container__img {
+        margin-top: 1rem;
+        width: 100%; } }
 
 /*Galery*/
 .galery {

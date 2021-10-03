@@ -61,6 +61,7 @@
   }
 
   &__aside {
+    margin: 0 2rem;
     &__container {
       width: 500px;
       margin-bottom: 3.5rem;
@@ -78,21 +79,28 @@
 }
 
 @media only screen and (max-width: $media-lg) {
-}
-
-@media only screen and (max-width: $media-sm) {
   .contact {
+    flex-direction: column;
+
     &__form {
+      margin: 0;
+      padding-right: 1rem;
       textarea {
         padding: 1rem;
         margin: 1rem;
-        width: 80vw;
+        width: 90vw;
         border: 1px double;
         font-size: 1em;
+      }
+      .checkbox {
+        margin: 1rem 0;
       }
     }
     &__aside {
       display: none;
     }
   }
+}
+
+@media only screen and (max-width: $media-sm) {
 }
