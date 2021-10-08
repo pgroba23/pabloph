@@ -249,13 +249,14 @@ ul {
       opacity: 0;
       transition: 0.5s; }
       .opinion-container__card__content__img {
-        width: 100px;
-        height: 100px;
+        width: 100%;
+        height: auto;
         border: 2px solid black;
         border-radius: 50%;
         position: absolute;
-        top: -80px;
-        right: 30px;
+        top: 50%;
+        left: 0;
+        overflow: hidden;
         opacity: 0.3; }
       .opinion-container__card__content__title {
         font-size: 3em;
@@ -280,9 +281,12 @@ ul {
         transform: translateY(0px);
         opacity: 1; }
         .opinion-container__card__content__title {
-          font-size: 2em; }
+          font-size: 2.1em; }
+        .opinion-container__card__content__img {
+          top: -40%; }
         .opinion-container__card__content__text {
-          font-size: 1.5em; } }
+          font-size: 1.5em;
+          font-weight: bold; } }
 
 @media only screen and (max-width: 780px) {
   .about-us {
@@ -308,10 +312,6 @@ ul {
   .opinion-container__card__content__text {
     font-weight: 500; }
   .opinion-container__card__content__img {
-    width: 100%;
-    height: auto;
-    top: 50%;
-    overflow: hidden;
     opacity: 0.2; } }
 
 /*Blog*/
@@ -553,7 +553,7 @@ ul {
     background-attachment: fixed; }
   .galery__img-div6 {
     grid-column: 1/5;
-    background-image: url(../multimedia/modelo/perros1.jpg);
+    background-image: url(../multimedia/modelo/perros1-min.jpg);
     background-size: cover;
     background-attachment: fixed; }
   .galery__img-div7 {
@@ -612,7 +612,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../../multimedia/portada.jpg);
+  background-image: url(../../multimedia/portada-min.jpg);
   background-size: cover; }
   .page-not-found h1 {
     font-size: 6em;
